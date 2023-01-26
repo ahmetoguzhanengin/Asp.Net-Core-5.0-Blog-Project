@@ -1,0 +1,129 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Howrite Admin Panel</title>
+
+    <link href="~/inspinia-gh-pages/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/inspinia-gh-pages/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="~/inspinia-gh-pages/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="~/inspinia-gh-pages/css/animate.css" rel="stylesheet">
+    <link href="~/inspinia-gh-pages/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+       @await Html.PartialAsync("~/Views/Admin/AdminNavbarPartial.cshtml")
+
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                        <form role="search" class="navbar-form-custom" action="search_results.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            <span class="m-r-sm text-muted welcome-message">Dashboardınıza Hoş Geldiniz.</span>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-messages">
+                                <li>
+                                    @await Component.InvokeAsync("AdminMessageNotification")
+                                    
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts">
+                                <li>
+                                    @await Component.InvokeAsync("AdminNotification")
+                                </li>
+                            
+                            </ul>
+                        </li>
+
+
+                        <li>
+                            <a href="/Login/LogOut/">
+                                <i class="fa fa-sign-out"></i> Çıkış Yap
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+            <div class="wrapper wrapper-content animated fadeInRight">
+             @RenderBody()
+            </div>
+            <div class="footer">
+                <div class="float-right">
+                   Howrite platformu <strong>ücretsizdir</strong> 
+                </div>
+                <div>
+                    <strong>Ahmet Oğuzhan Engin</strong> Tarafından Tasarlanmıştır; @DateTime.Now.Year;
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Mainly scripts -->
+    <script src="~/inspinia-gh-pages/js/jquery-3.1.1.min.js"></script>
+    <script src="~/inspinia-gh-pages/js/popper.min.js"></script>
+    <script src="~/inspinia-gh-pages/js/bootstrap.js"></script>
+    <script src="~/inspinia-gh-pages/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="~/inspinia-gh-pages/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Peity -->
+    <script src="~/inspinia-gh-pages/js/plugins/peity/jquery.peity.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="~/inspinia-gh-pages/js/inspinia.js"></script>
+    <script src="~/inspinia-gh-pages/js/plugins/pace/pace.min.js"></script>
+
+    <!-- iCheck -->
+    <script src="~/inspinia-gh-pages/js/plugins/iCheck/icheck.min.js"></script>
+
+    <!-- Peity -->
+    <script src="~/inspinia-gh-pages/js/demo/peity-demo.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+    </script>
+
+ @await RenderSectionAsync("scripts",false)
+    <!--false ı biri önermis yorumlarda-->
+</body>
+
+</html>
+

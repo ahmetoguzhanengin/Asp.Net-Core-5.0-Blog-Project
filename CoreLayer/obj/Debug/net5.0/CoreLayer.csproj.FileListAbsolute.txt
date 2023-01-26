@@ -1,0 +1,12 @@
+C:\Users\ahmet\Desktop\Projem\0-files\CoreDemo\CoreLayer\bin\Debug\net5.0\CoreLayer.deps.json
+C:\Users\ahmet\Desktop\Projem\0-files\CoreDemo\CoreLayer\bin\Debug\net5.0\CoreLayer.dll
+C:\Users\ahmet\Desktop\Projem\0-files\CoreDemo\CoreLayer\bin\Debug\net5.0\CoreLayer.pdb
+C:\Users\ahmet\Desktop\Projem\0-files\CoreDemo\CoreLayer\obj\Debug\net5.0\CoreLayer.csproj.AssemblyReference.cache
+C:\Users\ahmet\Desktop\Projem\0-files\CoreDemo\CoreLayer\obj\Debug\net5.0\CoreLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmet\Desktop\Projem\0-files\CoreDemo\CoreLayer\obj\Debug\net5.0\CoreLayer.AssemblyInfoInputs.cache
+C:\Users\ahmet\Desktop\Projem\0-files\CoreDemo\CoreLayer\obj\Debug\net5.0\CoreLayer.AssemblyInfo.cs
+C:\Users\ahmet\Desktop\Projem\0-files\CoreDemo\CoreLayer\obj\Debug\net5.0\CoreLayer.csproj.CoreCompileInputs.cache
+C:\Users\ahmet\Desktop\Projem\0-files\CoreDemo\CoreLayer\obj\Debug\net5.0\CoreLayer.dll
+C:\Users\ahmet\Desktop\Projem\0-files\CoreDemo\CoreLayer\obj\Debug\net5.0\refint\CoreLayer.dll
+C:\Users\ahmet\Desktop\Projem\0-files\CoreDemo\CoreLayer\obj\Debug\net5.0\CoreLayer.pdb
+C:\Users\ahmet\Desktop\Projem\0-files\CoreDemo\CoreLayer\obj\Debug\net5.0\ref\CoreLayer.dll

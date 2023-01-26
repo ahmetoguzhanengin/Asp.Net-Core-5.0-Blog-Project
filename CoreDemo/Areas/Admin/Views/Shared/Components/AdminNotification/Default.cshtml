@@ -1,0 +1,36 @@
+﻿@using EntityLayer.Concrete
+@model List<Notification>
+
+
+@foreach (var item in Model)
+{
+    <a href="mailbox.html" class="dropdown-item">
+        <div class="preview-thumbnail">
+            <div>
+                <i class="fa fa-envelope fa-fw"></i>
+            </div>
+        </div>
+        <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+            <h6 class="preview-subject font-weight-normal mb-1">@item.NotificationType</h6>
+            <p class="text-gray ellipsis mb-0"> @item.NotificationDetails </p>
+        </div>
+    </a>
+}
+
+<h6 class="p-3 mb-0 text-center"><a href="/Notification/AllNotification/"><b>Tüm bildirimleri gör</b></a></h6>
+
+
+
+
+@*
+@foreach (var item in Model)
+{
+    <a href="mailbox.html" class="dropdown-item">
+        <div>
+            <i class="fa fa-envelope fa-fw"></i>
+            <span class="float-right text-muted small">@item.NotificationDetails</span>
+        </div>
+    </a>
+}
+
+<h6 class="p-3 mb-0 text-center"><a href="/Notification/AllNotification/"><b>Tüm bildirimleri gör</b></a></h6>   *@

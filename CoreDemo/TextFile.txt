@@ -1,0 +1,6 @@
+﻿Kalan işler
+Yorumlar
+Rolleme
+Json Web Token (jwt)
+Entity Framework Responsibility minimize 
+Deploy

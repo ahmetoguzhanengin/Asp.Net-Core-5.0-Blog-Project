@@ -1,0 +1,32 @@
+﻿@model CoreDemo.Models.AddProfileImage
+@{
+    ViewData["Title"] = "WriterAdd";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+<form class= "form-group" method="post" enctype="multipart/form-data">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Yazar About Düzenleme</h4>
+                <br />
+
+                <div class="form-group">
+                    <div class="form-group">
+                        <label>Yazar Görsel</label>
+                       <input type ="file" name="WriterImage" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleTextarea1">Yazar Hakkında</label>
+                        @Html.TextAreaFor(x=>x.WriterAbout,10,3, new {@class = "form-control"})
+                    </div>
+                    <button type="submit" class="btn btn-gradient-primary mr-2">Kaydet</button>
+                    <button class="btn btn-light">İptal</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>
+

@@ -1,0 +1,86 @@
+﻿<div class="row">
+    <div class="col-lg-4">
+        <div class="widget-head-color-box navy-bg p-lg text-center">
+            <div class="m-b-md">
+                <h2 class="font-bold no-margins">
+                    @ViewBag.v1
+                </h2>
+                <small>Howrite Üyesi</small>
+            </div>
+            <img src="@ViewBag.v2" class="rounded-circle circle-border m-b-md" alt="profile">
+            <div>
+                <span>100 Tweets</span> |
+                <span>350 Takip Edilen</span> |
+                <span>610 Takipçi</span>
+            </div>
+        </div>
+        <div class="widget-text-box">
+            <h4 class="media-heading"> @ViewBag.v1</h4>
+            <p>@ViewBag.v3</p>
+            <div class="text-right">
+                <a href="/Admin/Writer/AdminWriterEditProfile/" class="btn btn-xs btn-white"><i class="fa fa-person"></i> Profil </a>
+             
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="widget lazur-bg p-xl">
+
+            <h2>
+               @ViewBag.v4
+            </h2>
+            <ul class="list-unstyled m-t-md">
+                <li>
+                    <span class="fa fa-home m-r-xs"></span>
+                    <label>Kullanıcı Adı:</label>
+                    @ViewBag.v5
+                </li>
+                <li>
+                    <span class="fa fa-envelope m-r-xs"></span>
+                    <label>Email:</label>
+                    @ViewBag.v6
+                </li>
+                <li>
+                    <span class="fa fa-home m-r-xs"></span>
+                    <label>Hakkında:</label>
+                    @ViewBag.v7.Substring(0,ViewBag.v7.Substring(0,45).LastIndexOf(" "))...
+                </li>
+            </ul>
+
+        </div>
+        <div class="widget navy-bg p-lg text-center">
+            <div class="m-b-md">
+                <i class="fa fa-shield fa-4x"></i>
+                <h1 class="m-xs">@ViewBag.v9</h1>
+                <h3 class="font-bold no-margins">
+                    Toplam Admin Sayısı
+                </h3>
+                <small> Toplam admin sayısını düzenlemek için Roller sayfasına gidebilirsiniz.</small>
+            </div>
+        </div>
+        
+    </div>
+    <div class="col-lg-4">
+        <div class="widget red-bg p-lg text-center">
+            <div class="m-b-md">
+                <i class="fa fa-bell fa-4x"></i>
+                <h1 class="m-xs">@ViewBag.v8</h1>
+                <h3 class="font-bold no-margins">
+                    Toplam Bildirim Sayısı
+                </h3>
+            </div>
+        </div>
+
+        <div class="widget  p-lg text-center">
+            <div class="m-b-md">
+                <i class="fa fa-flash fa-4x"></i>
+                <h1 class="m-xs">@ViewBag.v10</h1>
+                <h3 class="font-bold no-margins">
+                    Toplam Rol Sayısı
+                </h3>
+                <small>Toplam rol sayısını düzenlemek için Roller sayfasına gidebilirsiniz.</small>
+            </div>
+        </div>
+    </div>
+
+</div>
